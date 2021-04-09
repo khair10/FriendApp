@@ -11,7 +11,7 @@
             >
     <TabbedPage.Children>
 
-        <local:AnimeListPage Title="Friends"/>
-        <local:FavoriteAnimeListPage Title="Places" />
+        <local:FriendsListPage Title="Friends"/>
+        <local:PlacesListPage Title="Places" />
     </TabbedPage.Children>
 </TabbedPage>

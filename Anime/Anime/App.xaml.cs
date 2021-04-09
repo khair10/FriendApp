@@ -90,7 +90,7 @@ namespace Anime
                 MainPage = new NavigationPage(new MainPage());
             }
             else {
-                MainPage = new NavigationPage(new Page1());
+                MainPage = new NavigationPage(new Login());
             }
         }
 

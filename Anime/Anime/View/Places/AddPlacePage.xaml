@@ -15,12 +15,13 @@
 
                     <Image 
                         x:Name="image"
+                        Aspect="AspectFill"
                         Source="{Binding PhotoPath}"
                         HeightRequest="200"
                     WidthRequest="200"
                     HorizontalOptions="Center"
                     VerticalOptions="Start"
-                        Margin="16, 24, 16, 24"
+                        Margin="16, 24, 16, 16"
                         BackgroundColor="White">
                         <Image.Clip>
                             <EllipseGeometry
@@ -35,7 +36,7 @@
                                  WidthRequest="30"
                                  HeightRequest="30"
                                  CornerRadius="12"
-                                 Margin="16"
+                                 Margin="0"
                              HorizontalOptions="Center"
                     VerticalOptions="Start"
                                  Clicked="ImageButton_Clicked_1">
@@ -44,7 +45,7 @@
                 </StackLayout>
                 <Frame CornerRadius="16"
                            Padding="0"
-                           Margin="24, 0, 24, 16"
+                           Margin="24, 16, 24, 16"
                    VerticalOptions="StartAndExpand"
                            HasShadow="False">
                     <StackLayout BindingContext="{Binding .}" Padding="16" BackgroundColor="White" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" WidthRequest="400">

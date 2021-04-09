@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace Anime
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage, INotifyPropertyChanged
+    public partial class Login : ContentPage, INotifyPropertyChanged
     {
 
         public string name;
@@ -29,7 +29,7 @@ namespace Anime
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public Page1()
+        public Login()
         {
             InitializeComponent();
             BindingContext = this;

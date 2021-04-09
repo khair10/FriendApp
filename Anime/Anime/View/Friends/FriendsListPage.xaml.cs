@@ -9,11 +9,11 @@ using Xamarin.Forms.Xaml;
 namespace Anime
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AnimeListPage : ContentPage
+    public partial class FriendsListPage : ContentPage
     {
         public FriendsViewModel FriendsViewModel;
 
-        public AnimeListPage()
+        public FriendsListPage()
         {
             InitializeComponent();
             FriendsViewModel = new FriendsViewModel();
@@ -29,20 +29,11 @@ namespace Anime
             });
         }
 
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-        }
-
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)
                 return;
-
-            await Navigation.PushAsync(new AnimeDetails(e.Item as Friend));
-            //await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
-
-            //Deselect Item
+            await Navigation.PushAsync(new FriendDetails(e.Item as Friend));
             ((ListView)sender).SelectedItem = null;
         }
 

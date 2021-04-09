@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Anime.View.Places.FavoriteAnimeListPage.xaml", "View/Places/FavoriteAnimeListPage.xaml", typeof(global::Anime.FavoriteAnimeListPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Anime.View.Friends.FriendsListPage.xaml", "View/Friends/FriendsListPage.xaml", typeof(global::Anime.FriendsListPage))]
 
 namespace Anime {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Places\\FavoriteAnimeListPage.xaml")]
-    public partial class FavoriteAnimeListPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Friends\\FriendsListPage.xaml")]
+    public partial class FriendsListPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView MyListView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FavoriteAnimeListPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FriendsListPage));
             MyListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "MyListView");
         }
     }

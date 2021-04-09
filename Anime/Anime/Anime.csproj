@@ -16,6 +16,21 @@
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Friends\FriendsListPage.xaml.cs">
+      <DependentUpon>FriendsListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Friends\FriendDetails.xaml.cs">
+      <DependentUpon>FriendDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Places\PlacesListPage.xaml.cs">
+      <DependentUpon>PlacesListPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>  <!--<ItemGroup>
     <Compile Update="ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
@@ -23,7 +38,7 @@
   </ItemGroup>-->
 
   <ItemGroup>
-    <EmbeddedResource Update="Page1.xaml">
+    <EmbeddedResource Update="Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Places\PlaceDetailsPage.xaml">
@@ -35,16 +50,16 @@
     <EmbeddedResource Update="View\Friends\AddFriend.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Friends\AnimeDetails.xaml">
+    <EmbeddedResource Update="View\Friends\FriendDetails.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Friends\AnimeListPage.xaml">
+    <EmbeddedResource Update="View\Friends\FriendsListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Friends\EditFriendPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Places\FavoriteAnimeListPage.xaml">
+    <EmbeddedResource Update="View\Places\PlacesListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

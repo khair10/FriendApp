@@ -4,13 +4,9 @@ C:\Users\khair\source\repos\Anime\Anime\Anime\bin\Debug\netstandard2.0\ref\Anime
 C:\Users\khair\source\repos\Anime\Anime\Anime\bin\Debug\netstandard2.0\Anime.pdb
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\Page1.xaml.g.cs
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Friends\AddFriend.xaml.g.cs
-C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Friends\AnimeDetails.xaml.g.cs
-C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Friends\AnimeListPage.xaml.g.cs
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Friends\EditFriendPage.xaml.g.cs
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Places\AddPlacePage.xaml.g.cs
-C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Places\FavoriteAnimeListPage.xaml.g.cs
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Places\PlaceDetailsPage.xaml.g.cs
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\Anime.AssemblyInfoInputs.cache
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\Anime.AssemblyInfo.cs
@@ -19,3 +15,8 @@ C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\XamlC.sta
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\Anime.dll
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\ref\Anime.dll
 C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\Anime.pdb
+C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\Anime.csprojAssemblyReference.cache
+C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Friends\FriendDetails.xaml.g.cs
+C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\Login.xaml.g.cs
+C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Friends\FriendsListPage.xaml.g.cs
+C:\Users\khair\source\repos\Anime\Anime\Anime\obj\Debug\netstandard2.0\View\Places\PlacesListPage.xaml.g.cs

@@ -10,10 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace Anime
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AnimeDetails : ContentPage
+    public partial class FriendDetails : ContentPage
     {
         FriendDetailsViewModel friendDetailsViewModel;
-        public AnimeDetails(Friend item)
+        public FriendDetails(Friend item)
         {
             friendDetailsViewModel = new FriendDetailsViewModel(item);
             InitializeComponent();

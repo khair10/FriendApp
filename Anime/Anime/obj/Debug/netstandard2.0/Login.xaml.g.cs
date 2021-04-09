@@ -8,21 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Anime.View.Friends.AnimeListPage.xaml", "View/Friends/AnimeListPage.xaml", typeof(global::Anime.AnimeListPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Anime.Login.xaml", "Login.xaml", typeof(global::Anime.Login))]
 
 namespace Anime {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Friends\\AnimeListPage.xaml")]
-    public partial class AnimeListPage : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView MyListView;
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Login.xaml")]
+    public partial class Login : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AnimeListPage));
-            MyListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "MyListView");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Login));
         }
     }
 }

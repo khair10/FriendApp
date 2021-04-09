@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Anime
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FavoriteAnimeListPage : ContentPage
+    public partial class PlacesListPage : ContentPage
     {
         public PlacesViewModel PlacesViewModel;
 
-        public FavoriteAnimeListPage()
+        public PlacesListPage()
         {
             InitializeComponent();
             PlacesViewModel = new PlacesViewModel();

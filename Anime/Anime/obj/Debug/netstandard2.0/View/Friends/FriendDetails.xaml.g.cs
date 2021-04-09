@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Anime.View.Friends.AnimeDetails.xaml", "View/Friends/AnimeDetails.xaml", typeof(global::Anime.AnimeDetails))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Anime.View.Friends.FriendDetails.xaml", "View/Friends/FriendDetails.xaml", typeof(global::Anime.FriendDetails))]
 
 namespace Anime {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Friends\\AnimeDetails.xaml")]
-    public partial class AnimeDetails : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Friends\\FriendDetails.xaml")]
+    public partial class FriendDetails : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Image image;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AnimeDetails));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FriendDetails));
             image = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "image");
         }
     }
