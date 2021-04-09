@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "806740163034",
+    "firebase_url": "https://friendsapp-1062b-default-rtdb.firebaseio.com",
+    "project_id": "friendsapp-1062b",
+    "storage_bucket": "friendsapp-1062b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806740163034:android:1e5900222b88346a69e8e3",
+        "android_client_info": {
+          "package_name": "com.companyname.anime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806740163034-ndf7nmptm5io71b86p7tvl7eld8kds1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9M6dwjgqspy34vx_483jRG1F2YyjbwWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806740163034-ndf7nmptm5io71b86p7tvl7eld8kds1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

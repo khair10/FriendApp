@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             Title="Friend Editing"
+             x:Class="Anime.EditFriendPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+            <Frame CornerRadius="16"
+                           Padding="0"
+                           Margin="24, 16, 24, 16"
+                   VerticalOptions="StartAndExpand"
+                           HasShadow="False">
+                <StackLayout BindingContext="{Binding .}" Padding="16" BackgroundColor="White" VerticalOptions="Start">
+                    <Label Text="{Binding Name}" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                    <DatePicker Date="{Binding BirthDay}" Format="yyyy-MM-dd" MaximumDate="{x:Static sys:DateTime.Now}" MinimumDate="1950-01-01"></DatePicker>
+                    <Entry IsPassword="False" Text="{Binding Hobby}" Placeholder="Hobby"></Entry>
+                    <Entry IsPassword="False" Text="{Binding Bio}" Placeholder="Additional info"></Entry>
+                    <Button Text="Save" Command="{Binding SubmitCommand}"></Button>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

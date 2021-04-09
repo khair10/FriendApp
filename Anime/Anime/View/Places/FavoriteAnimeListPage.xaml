@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anime.FavoriteAnimeListPage">
+    <AbsoluteLayout>
+        <ListView x:Name="MyListView"
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"
+                ItemsSource="{Binding Places}"
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="True"
+                RefreshCommand="{Binding RefreshCommand}"
+                IsRefreshing="{Binding IsRefreshing}"
+                ItemTapped="Handle_ItemTapped"
+                CachingStrategy="RecycleElement">
+            <!--SeparatorVisibility="None"-->
+
+            <!--Built in Cells-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+
+                            <MenuItem Clicked="OnDelete"
+                          CommandParameter="{Binding .}"
+                          Text="Delete" IsDestructive="True" />
+                        </ViewCell.ContextActions>
+                        <ViewCell.View>
+                            <StackLayout  Orientation="Vertical" Padding="16">
+                                <Label FontSize="16" Text="{Binding Name}"></Label>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+            <!--Custom View Cells-->
+            <!--
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout>
+                <Label Text="{Binding Text}" 
+                       Style="{DynamicResource ListItemTextStyle}" />
+                <Label Text="{Binding Detail}" 
+                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+        -->
+        </ListView>
+        <ImageButton Source="baseline_edit_black_24dp.png" 
+            BackgroundColor="CadetBlue"
+                     HeightRequest="64"
+                     WidthRequest="64"
+                     Padding="20"
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+            AbsoluteLayout.LayoutBounds=".95,.95,80,80" 
+            Clicked="ImageButton_Clicked" />
+    </AbsoluteLayout>
+</ContentPage>

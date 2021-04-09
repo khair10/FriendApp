@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Place details"
+             x:Class="Anime.PlaceDetailsPage">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                <Image 
+                        x:Name="image"
+                    Aspect="AspectFill"
+                        Source="{Binding PhotoPath}"
+                        HorizontalOptions="CenterAndExpand"
+                        HeightRequest="200"
+                        WidthRequest="200"
+                        VerticalOptions="Start"
+                        Margin="16, 24, 16, 24"
+                        BackgroundColor="White">
+                    <Image.Clip>
+                        <EllipseGeometry
+                                Center="100,100"
+                                RadiusX="100"
+                                RadiusY="100"/>
+                    </Image.Clip>
+                </Image>
+                <Label Text="{Binding Name}" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Longitude:" TextColor="DarkGray" FontSize="18" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                    <Label Text="{Binding Longitude}" TextColor="DarkGray" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Latitude:" TextColor="DarkGray" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                    <Label Text="{Binding Lattitude}" TextColor="DarkGray" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                </StackLayout>
+                
+                <Button Text="View on map" Clicked="Button_Clicked" WidthRequest="200" HorizontalOptions="Center"/>
+                <Frame CornerRadius="16"
+                       Padding="0"
+                       Margin="24, 16, 24, 16"
+                       HasShadow="False">
+                    <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" BackgroundColor="White" Padding="16">
+                        <Label Text="Info" TextColor="Black" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                        <Label TextColor="DarkGray" HorizontalTextAlignment="Start" FontSize="18" HorizontalOptions="Center" Text="{Binding Info}" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

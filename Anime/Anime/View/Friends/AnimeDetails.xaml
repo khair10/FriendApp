@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anime.AnimeDetails"
+             Title="Friend details">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                <StackLayout HorizontalOptions="Center"
+                       VerticalOptions="Center" Orientation="Horizontal">
+                    <ImageButton Source="baseline_edit_black_24dp.png"
+                                 WidthRequest="30"   
+                                HeightRequest="30"
+                                 Padding="3"
+                                BackgroundColor="White"
+                                VerticalOptions="Center"
+                                 CornerRadius="12"
+                                 Clicked="ImageButton_Clicked"
+                                 >
+
+                    </ImageButton>
+                    <Image 
+                        x:Name="image"
+                        Aspect="AspectFill"
+                        Source="{Binding PhotoPath}"
+                        WidthRequest="200"   
+                        HeightRequest="200"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="16, 24, 16, 24"
+                        BackgroundColor="White">
+                        <Image.Clip>
+                            <EllipseGeometry
+                                Center="100,100"
+                                RadiusX="100"
+                                RadiusY="100"/>
+                        </Image.Clip>
+                    </Image>
+                    <ImageButton Source="baseline_photo_camera_black_24dp.png"
+                                 WidthRequest="30"   
+                                HeightRequest="30"
+                                 Padding="3"
+                                BackgroundColor="White"
+                                 CornerRadius="12"
+                                VerticalOptions="Center"
+                                 Clicked="ImageButton_Clicked_1"
+                                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=image, Property=X}"
+                                 >
+                    </ImageButton>
+                </StackLayout>
+                <Label Text="{Binding Name}" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                <Label Text="{Binding BirthDay}" TextColor="Gray" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                <Frame CornerRadius="16"
+                       Padding="0"
+                       Margin="24, 16, 24, 16"
+                       HasShadow="False">
+                    <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" BackgroundColor="White" Padding="16">
+                        <Label Text="Hobby" TextColor="Black" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                        <Label TextColor="DarkGray" HorizontalTextAlignment="Start" FontSize="18" HorizontalOptions="Center" Text="{Binding Hobby}" />
+                    
+                        <Label Text="About" TextColor="Black" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                        <Label TextColor="DarkGray" HorizontalTextAlignment="Start" FontSize="18" HorizontalOptions="Center" Text="{Binding Bio}" />
+                    
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

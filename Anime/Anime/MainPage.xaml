@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Anime;assembly=Anime"
+             x:Class="Anime.MainPage"
+             NavigationPage.HasNavigationBar="True"
+             BarBackgroundColor="White"
+             SelectedTabColor="Black"
+             Title="Friends app"
+             UnselectedTabColor="Gray"
+            >
+    <TabbedPage.Children>
+
+        <local:AnimeListPage Title="Friends"/>
+        <local:FavoriteAnimeListPage Title="Places" />
+    </TabbedPage.Children>
+</TabbedPage>

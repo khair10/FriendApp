@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anime.AddPlacePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--<local:AddFriendViewModel x:Key="viewModel"/>-->
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                <StackLayout HorizontalOptions="Center"
+                           VerticalOptions="Center" Orientation="Vertical">
+
+                    <Image 
+                        x:Name="image"
+                        Source="{Binding PhotoPath}"
+                        HeightRequest="200"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                        Margin="16, 24, 16, 24"
+                        BackgroundColor="White">
+                        <Image.Clip>
+                            <EllipseGeometry
+                                Center="100,100"
+                                RadiusX="100"
+                                RadiusY="100"/>
+                        </Image.Clip>
+                    </Image>
+                    <ImageButton Source="baseline_photo_camera_black_24dp.png"
+                                 Padding="3"
+                                 BackgroundColor="White"
+                                 WidthRequest="30"
+                                 HeightRequest="30"
+                                 CornerRadius="12"
+                                 Margin="16"
+                             HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                                 Clicked="ImageButton_Clicked_1">
+                    </ImageButton>
+
+                </StackLayout>
+                <Frame CornerRadius="16"
+                           Padding="0"
+                           Margin="24, 0, 24, 16"
+                   VerticalOptions="StartAndExpand"
+                           HasShadow="False">
+                    <StackLayout BindingContext="{Binding .}" Padding="16" BackgroundColor="White" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" WidthRequest="400">
+                        <Entry IsPassword="False" Text="{Binding Name}" Placeholder="Name"></Entry>
+                        <Entry IsPassword="False" Text="{Binding Info}" Placeholder="Info"></Entry>
+                        <Button Text="Save" Command="{Binding SubmitCommand}"></Button>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
